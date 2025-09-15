@@ -8,20 +8,21 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
+      background: url("logo.png") no-repeat center center;
+      background-size: cover;
+      background-color: #000;
     }
 
-    .logo {
-      max-width: 100%;
-      height: auto;
+    /* Quando a tela for menor que 768px (celulares) */
+    @media (max-width: 768px) {
+      body {
+        background: url("logo2.png") no-repeat center center;
+        background-size: cover;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Draközz Wear" class="logo">
 </body>
 </html>
